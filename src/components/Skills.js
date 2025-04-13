@@ -234,7 +234,7 @@ function Skills() {
     ];
 
     return (
-        <SkillsSection>
+        <SkillsSection id="skills">
             <Container>
                 <motion.div
                     ref={ref}

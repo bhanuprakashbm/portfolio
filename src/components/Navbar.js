@@ -57,30 +57,29 @@ const NavLink = styled.a`
 `;
 
 function Navbar() {
-    const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
 
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    return (
-        <Header isScrolled={isScrolled}>
-            <NavContainer>
-                <Nav>
-                    <NavLink href="#about">About</NavLink>
-                    <NavLink href="#experience">Experience</NavLink>
-                    <NavLink href="#projects">Projects</NavLink>
-                    <NavLink href="#skills">Skills</NavLink>
-                    <NavLink href="#contact">Contact</NavLink>
-                </Nav>
-            </NavContainer>
-        </Header>
-    );
+  return (
+    <Header isScrolled={isScrolled}>
+      <NavContainer>
+        <Nav>
+          <NavLink href="#about">About</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
+        </Nav>
+      </NavContainer>
+    </Header>
+  );
 }
 
 export default Navbar; 
