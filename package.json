@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bhanuprakashbm.github.io/portfolio/",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -23,6 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "direct-deploy": "node direct-deploy.js",
+    "gh-deploy": "node gh-deploy.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
