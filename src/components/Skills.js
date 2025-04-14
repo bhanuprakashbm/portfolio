@@ -77,21 +77,6 @@ const Source = styled.p`
   margin-top: auto;
 `;
 
-const SkillsList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-`;
-
-const SkillItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #E0E0E0;
-  font-size: 1rem;
-`;
-
 const LeadershipSection = styled.div`
   margin-top: 5rem;
 `;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const ContactSection = styled.section`
   background-color: #0A0C0F;
@@ -145,66 +145,6 @@ const SocialLinks = styled.div`
       color: #FF6B48;
       transform: translateY(-2px);
     }
-  }
-`;
-
-const ContactForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
-
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-
-  label {
-    font-weight: 500;
-    color: white;
-  }
-
-  input,
-  textarea {
-    padding: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    transition: all 0.3s ease;
-
-    &:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      background: rgba(255, 255, 255, 0.15);
-    }
-
-    &::placeholder {
-      color: rgba(255, 255, 255, 0.5);
-    }
-  }
-
-  textarea {
-    min-height: 150px;
-    resize: vertical;
-  }
-`;
-
-const SubmitButton = styled.button`
-  background: var(--primary-color);
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
-
-  &:hover {
-    background: #0056b3;
-    transform: translateY(-2px);
   }
 `;
 
